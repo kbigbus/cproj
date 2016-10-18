@@ -19,7 +19,7 @@ int StringSet(String* pStr, char* pBuf)
 		pStr->len++;
 	}
 	pStr->buf[i] = 0;
-	pStr->len++;
+	pStr->len = i;
 	return 0;
 }
 
@@ -46,6 +46,6 @@ int StringAppend(String* pStr, char* pBuf)
 		pStr->len++;
 	}
 	pStr->buf[i] = 0;
-	pStr->len++;
+	pStr->len = i;
 	return 0;
 }
